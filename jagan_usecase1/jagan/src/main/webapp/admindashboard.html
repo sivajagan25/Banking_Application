@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-image: url(./all2.png);
+            background-size: cover;
+            background-position: center;
+            margin: 10;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            align-items: center;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .h2 {
+            margin-top: 5%;
+            margin-left: 23%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 300%;
+            margin-bottom: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .image-container img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        #viewall{
+            margin-left: 30%;
+            background-color: transparent;
+        }
+        #viewall:hover{
+          
+           text-decoration: underline;
+        }
+        
+        #btn{
+    background-color: #4CAF50;
+    margin-top: 255%;
+    color: white;
+    padding:10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#btn:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <div class="h2">Customer Management</div>
+        <div class="container">
+           
+            <div class="image-container">
+                <img src="./create.jpg" alt="">
+                <a href="./createuser.html"><button>Create customer</button></a>
+            </div>
+            
+            <div class="image-container">
+                <img src="./viewuser.png" alt="">
+                <a href="./viewuser.jsp"><button>View customer</button></a>
+            </div>
+            
+            <div class="image-container">
+                <img src="./deleteuser.png" alt="">
+                <a href="./deleteuser.html"><button>Delete customer</button></a>
+            </div>
+            
+            <div class="image-container">
+                <img src="./modidyuser.png" alt="">
+                <a href="./modifyuser.jsp"><button>Modify customer</button></a>
+            </div>
+            <div>
+                <a href="./userlogin.html">
+              
+           <button id="btn">Logout</button></div></a> 
+            
+           
+            
+        </div>
+        <form action="viewall" method="post">
+            <button id="viewall">Click here for view all the customers </button>
+            </form>
+     
+       
+            
+           
+        
+    </div>
+    
+   
+</body>
+</html>
